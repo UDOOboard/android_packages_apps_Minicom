@@ -21,6 +21,6 @@ include $(CLEAR_VARS)
 TARGET_PLATFORM := android-23
 LOCAL_MODULE    := libserial_port
 LOCAL_SRC_FILES := SerialPort.c
-LOCAL_LDLIBS    := -llog
+LOCAL_SHARED_LIBRARIES := liblog libcutils
 
 include $(BUILD_SHARED_LIBRARY)
